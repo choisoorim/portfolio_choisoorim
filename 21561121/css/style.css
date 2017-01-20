@@ -1,0 +1,293 @@
+@charset "UTF-8";
+/*RESET CSS 보통 리셋을 한 번 시켜고 시작한다.*/
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr,
+acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong,
+sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table,
+caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption,
+footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+	float:bottom;
+}
+a {
+	text-decoration: none;
+}
+/* css시작 */
+body {}
+img.back {position: absolute; width: 100%; height: 6206px; z-index: -999999999999999999; min-width: 1500px;}
+div.nav {position: fixed; z-index: 99999999; margin-left: 8%; margin-top: 40%; min-width: 1500px;}
+
+
+header {position: relative; overflow: hidden; text-align: center; height: 157px; z-index: 99999;}
+header > div.wrap {text-align: center; width: 1500px; display: inline-block;}
+header > div.wrap > h1 {float: left; margin-top:30px;}
+header > div.wrap > nav {float: right;}
+header > div.wrap > nav > ul {line-height: 157px;}
+header > div.wrap > nav > ul > li {float: left; margin-left: 18px;}
+header > div.wrap > nav > ul > li > a {color: #FFF;}
+header > div.wrap > nav > ul > li > a:hover, a:active {color: #968656;}
+
+div.tri-set {overflow: hidden;min-width: 1500px; overflow: hidden;}
+
+div.tri-set > div.tri {
+	display: block;text-align: center;display: inline-block;overflow: hidden; float: right;width: 1920px;}
+div.tri-set > div.tri > span#triangle-bottomright {
+	width: 0;
+	height: 0;
+	border-bottom: 1915px solid #33373a;
+	border-left: 1915px solid transparent;
+	position: absolute; margin-top: -570px; text-align: center; display: inline-block;
+	margin-left: -50%; z-index: -99995
+}
+div.tri-set > div.tri2 {display: block;text-align: center;display: inline-block;overflow: hidden; float: left;}
+div.tri-set > div.tri2 > span#triangle-down {
+	overflow: hidden;
+	width: 0;
+	height: 0;
+	border-left: 200px solid transparent;
+	border-right: 200px solid transparent;
+	border-top: 200px solid #656e74;
+	position: absolute; margin-top: -1%; margin-left: 51%; z-index: -9999999999999999;
+}
+
+div.tri-set > div.tri3 {display: block;text-align: center;display: inline-block;overflow: hidden; float: left; margin-left: -1176px;}
+div.tri-set > div.tri3 > span#triangle-right
+{
+	width: 0;
+	height: 0;
+	border-top: 1200px solid transparent;
+	border-left: 1176px solid #fffcf5;
+	border-bottom: 1200px solid transparent;
+	position: absolute; margin-left: 50%; margin-top: 145px; z-index: -99991;
+}
+div.tri-set > div.tri3 > span#triangle-right2
+{
+	width: 0;
+	height: 0;
+	border-top: 1200px solid transparent;
+	border-left: 1176px solid #33373a;
+	border-bottom: 1200px solid transparent;
+	position: absolute; margin-left: 50%; margin-top: 645px; z-index:-9999;
+}
+div.tri-set > div.tri2 > span#triangle-up {
+	width: 0;
+	height: 0;
+	border-left: 1190px solid transparent;
+	border-right: 1190px solid transparent;
+	border-bottom: 1210px solid #33373a;
+	position: absolute; 
+	left: 50%; margin-top: 1844px; margin-left: -1190px;	z-index: -99999;
+}
+div.tri-set > div.tri2 > span#triangle-down2 {
+	overflow: hidden;
+	width: 0;
+	height: 0;
+	border-left: 1190px solid transparent;
+	border-right: 1190px solid transparent;
+	border-top: 1210px solid #33373a;
+	position: absolute; left: 50%; margin-left:-1190px; margin-top: 3050px; z-index: -999999;
+}
+div.tri-set > div.tri2 > span#triangle-bottomleft {
+	width: 0;
+	height: 0;
+	border-bottom: 1920px solid #33373a;
+	border-right: 1920px solid transparent;
+	position: absolute; left: 50%; margin-left: -960px;z-index: -999999999999999999999999;	margin-top: 4350px;
+}
+
+section{text-align: center;min-width: 1500px;}
+section.section1 {height:881px; text-align: center;}
+section.section1 > article.art1 { 
+	float: left;position: relative;left: 50%;
+	margin-left: -750px; text-align: left;
+	margin-top: 150px;}
+section.section1 > article.art1 > div.content1 {}
+section.section1 > article.art1 > div.content1 > h2 {font-size: 37px; color: #434340;}
+section.section1 > article.art1 > div.gnb {display: inline-block;width:100%;height:60px;text-align: center;}
+section.section1 > article.art1 > div.gnb > ul.gnb-l {float:left; margin-top:37px;}
+section.section1 > article.art1 > div.gnb > ul.gnb-l > li {float: left; margin-right: 15px;}
+section.section1 > article.art1 > div.gnb > ul.gnb-l > li.btn-lang {color: #6d665c;}
+section.section1 > article.art1 > div.gnb > ul.gnb-l > li.btn-lang > a {color: #6d665c;}
+section.section1 > article.art1 > div.gnb > ul.gnb-l > li.btn-lang > a:hover, a:active {color: #6d665c;}
+section.section1 > article.art1 > div.gnb > ul.gnb-l > li.btn-lang > div.layerbox {
+	display:none;
+	position:absolute;
+	top:131px;left:0;
+	background-color:#FFF;
+	border:1px solid gray;
+}
+section.section1 > article.art1 > div.gnb > ul.gnb-l > li.btn-lang > div.layerbox > ul {width:200px;}
+section.section1 > article.art1 > div.gnb > ul.gnb-l > li.btn-lang > div.layerbox > ul > li {height:30px;border-bottom:1px solid gray;}
+section.section1 > article.art1 > div.gnb > ul.gnb-l > li.btn-lang > div.layerbox > ul > li:last-child {border: 0;}
+section.section1 > article.art1 > div.gnb > ul.gnb-l > li.btn-lang > div.layerbox > ul > li > a {display:block;padding:0 10px;height:30px;line-height:30px;color: #6d665c;}
+section.section1 > article.art1 > div.gnb > ul.gnb-l > li.btn-lang > div.layerbox > ul > li > a:hover, a:active {}
+
+section.section1 > article.art2 {
+	float: left;position: relative;left: 50%;
+	text-align: right;	margin-left: 20px; top: 50%;
+}
+section.section1 > article.art2 > div.content2 {}
+section.section1 > article.art2 > div.content2 > h2 {font-size: 44px;line-height: 63px; color: #FFF;}
+section.section1 > article.art2 > div.content2 > p {font-size: 22px; color: #968656; margin: 20px auto 60px;}
+section.section1 > article.art2 > div.content2 > a {font-size:17px; border: 6px solid #FFF; color: #FFF; padding: 22px 84px;}
+section.section1 > article.art2 > div.content2 > a:hover {color: #968656; border: 6px solid #968656;}
+section.section1 > article.art2 > div.content2 > a:active {color: #968656; border: 6px solid #968656;}
+
+section.section2 {height: 940px; text-align: center; position: relative; padding-top: 118px;}
+section.section2 > article {}
+section.section2 > article > div {}
+section.section2 > article > div > h2 {font-size: 40px; color: #968656;}
+section.section2 > article > div > p {font-size: 25px; margin-top: 12px;color: #ddd4cb;}
+section.section2 > article > div.gallery {float:left;text-align: center;margin-left: 50%;}
+section.section2 > article > div.gallery > ul {position: relative; margin-left: -700px; width: 1500px; margin-top: 60px;}
+section.section2 > article > div.gallery > ul > li {float: left; margin-left: 20px;}
+section.section2 > article > div.gallery > ul > li:nth-child(1) {margin-left:0;}
+section.section2 > article > div.gallery > ul > li:nth-child(5) {margin-left:150px;margin-top: -150px;}
+section.section2 > article > div.gallery > ul > li:nth-child(6) {margin-top: -150px;}
+section.section2 > article > div.gallery > ul > li:nth-child(7) {margin-top: -150px;}
+section.section2 > article > div.gallery > ul > li:nth-child(8) {margin-top: -150px;}
+section.section2 > article > div.gallery > ul > li > div.hover {
+	max-width:300px; 
+	height:300px; 
+	line-height:300px; 
+	margin:20px auto; 
+	background-color:#f8bbd0;  
+	text-align:center; transition:all 0.8s, color 0.3s 0.3s;  
+	color:#33373a; cursor: pointer;  
+
+}
+section.section2 > article > div.gallery > ul > li > div.hover:hover{color: #FFF;}
+section.section2 > article > div.gallery > ul > li:nth-child(1) > div.hover {background: url('../img/img1.png'); width: 300px; height: 300px;}
+section.section2 > article > div.gallery > ul > li:nth-child(2) > div.hover {background: url('../img/img2.png'); width: 300px; height: 300px;}
+section.section2 > article > div.gallery > ul > li:nth-child(3) > div.hover {background: url('../img/img3.png'); width: 300px; height: 300px;}
+section.section2 > article > div.gallery > ul > li:nth-child(4) > div.hover {background: url('../img/img4.png'); width: 300px; height: 300px;}
+section.section2 > article > div.gallery > ul > li:nth-child(5) > div.hover {background: url('../img/img5.png'); width: 300px; height: 300px;}
+section.section2 > article > div.gallery > ul > li:nth-child(6) > div.hover {background: url('../img/img6.png'); width: 300px; height: 300px;}
+section.section2 > article > div.gallery > ul > li:nth-child(7) > div.hover {background: url('../img/img7.png'); width: 300px; height: 300px;}
+section.section2 > article > div.gallery > ul > li:nth-child(8) > div.hover {background: url('../img/img8.png'); width: 300px; height: 300px;}
+section.section2 > article > div.gallery > ul > li > div.effect:hover {
+	box-shadow: inset 300px 300px 0 300px rgba(0,0,0,0.5);
+	color:#fff;
+}
+section.section2 > article > div.gallery > ul > li > div.effect > span {}
+
+section.section3 {text-align: center; height: 720px; padding-top: 118px;z-index: 99999999999999;}
+section.section3 > article {}
+section.section3 > article > div {}
+section.section3 > article > div > h2 {font-size: 40px; color: #968656;}
+section.section3 > article > div > p {font-size: 25px; margin-top: 12px;color: #ddd4cb;}
+section.section3 > article > div.movie {float:left;text-align: center;margin-left: 48%;}
+section.section3 > article > div.movie > ul {position: relative; margin-left: -400px; width: 1500px; margin-top: 180px;}
+section.section3 > article > div.movie > ul > li {float: left; margin-left: 0px;}
+section.section3 > article > div.movie > ul > li:nth-child(2) {margin-top: 150px;}
+section.section3 > article > div.movie > ul > li:nth-child(4) {margin-top: 150px;}
+section.section3 > article > div.movie > ul > li:nth-child(1) > div.hover {background: url(../img/1.png);}
+section.section3 > article > div.movie > ul > li:nth-child(2) > div.hover {background: url(../img/2.png);}
+section.section3 > article > div.movie > ul > li:nth-child(3) > div.hover {background: url(../img/3.png);}
+section.section3 > article > div.movie > ul > li:nth-child(4) > div.hover {background: url(../img/4.png);}
+section.section3 > article > div.movie > ul > li > div.hover {
+		width: 200px;
+		height: 200px;
+		text-align: center;
+		line-height: 200px;
+		margin:20px auto;
+		border-radius: 50%;
+		background: #d3d3d3;
+		transition:all 0.8s;
+		background-color:#e1bee7;
+		color:#FFF;
+}
+section.section3 > article > div.movie > ul > li > div.hover:hover {color: #FFF;}
+section.section3 > article > div.movie > ul > li > div.hover > a {color:#33373a;}
+section.section3 > article > div.movie > ul > li > div.hover > a:hover {color: #FFF;}
+section.section3 > article > div.movie > ul > li > div.effect:hover {
+	box-shadow: inset 0px 0px 0 100px rgba(0,0,0,0.5);
+	color:#fff;
+}
+
+.vGraph{ padding:20px 0;}
+.vGraph ul{ margin:0; padding:0; height:200px; border:1px solid #ddd; border-top:0; border-right:0; font-size:11px; font-family:Tahoma, Geneva, sans-serif; list-style:none;}
+.vGraph ul:after{ content:""; display:block; clear:both;}
+.vGraph li{ float:left; display:inline; width:8%; height:100%; margin:0 3%; position:relative; text-align:center; white-space:nowrap;}
+.vGraph .gTerm{ position:relative; display:inline-block; width:100%; height:20px; line-height:20px; margin:0 -100% -20px 0; padding:200px 0 0 0; vertical-align:bottom; color:#968656; font-weight:bold;}
+.vGraph .gBar{ position:relative; display:inline-block; width:100%; margin:-1px 0 0 0; border:1px solid #ccc; border-bottom:0; background:#e9e9e9; vertical-align:bottom;}
+.vGraph .gBar span{ position:absolute; width:100%; top:-20px; left:0; color:#968656;}
+
+section.section4 {text-align: center; height: 862px; padding-top: 118px;}
+section.section4 > article {}
+section.section4 > article > div {margin-bottom: 150px;}
+section.section4 > article > div > h2 {font-size: 40px; color: #968656;}
+section.section4 > article > div > p {font-size: 25px; margin-top: 12px;color: #ddd4cb;}
+
+section.section5 {text-align: center; height: 882px; padding-top: 118px;}
+section.section5 > article {}
+section.section5 > article > div {}
+section.section5 > article > div > h2 {font-size: 40px; color: #968656;}
+section.section5 > article > div > p {font-size: 25px; margin-top: 12px;color:#ddd4cb;}
+section.section5 > article > div.land {float:left;text-align: center;margin-left: 48%;}
+section.section5 > article > div.land > ul {position: relative; margin-left: -400px; width: 1500px; margin-top: 130px;}
+section.section5 > article > div.land > ul > li {float: left; margin-right: 100px; margin-top: 30px;}
+section.section5 > article > div.land > ul > li:nth-child() {}
+section.section5 > article > div.land > ul > li:nth-child(4) {margin-right: 300px;}
+section.section5 > article > div.land > ul > li:nth-child(5) {margin-left: 115px;}
+section.section5 > article > div.land > ul > li:nth-child(8) {margin-right: 300px;}
+section.section5 > article > div.land > ul > li > div.hover {
+	width:150px; 
+	height:150px; 
+	line-height:30px; 
+	margin:20px auto; 
+	background-color:#747474; 
+	opacity: 0.75; 
+	transform: rotate(45deg);
+	text-align:center; transition:all 0.8s, color 0.3s 0.3s;  
+	color:#33373a; cursor: pointer; 
+}
+section.section5 > article > div.land > ul > li > div.hover:hover {color: #FFF;}
+section.section5 > article > div.land > ul > li > div.hover > a {color:#33373a;}
+section.section5 > article > div.land > ul > li > div.hover > a:hover {color: #FFF;}
+section.section5 > article > div.land > ul > li > div.effect:hover {
+	box-shadow:0 150px 0 0 rgba(0,0,0,0.5) inset;
+}
+
+section.section6 {height: 1095px; padding-top: 138px;}
+section.section6 > article {}
+section.section6 > article > div {margin-bottom: 50px;}
+section.section6 > article > div > h2 {font-size: 40px; color: #968656;}
+section.section6 > article > div > p {font-size: 25px; margin-top: 12px;color:#4c5155;}
+section.section6 > article > div#container4 > form > fieldset > p {line-height: 60px;}
+section.section6 > article > div#container4 > form > fieldset  {color: #747474;}
+
+footer {
+	text-align: center;
+    height: 150px; background-color: #000; color: #fff; }
+footer > p {padding-top: 15px;}
+footer >div#divfooter {margin-left: 50%; line-height: 150px;}
+footer > div#divfooter > ul { margin-left: -128px; margin-top: 15px;}
+footer > div#divfooter > ul > li {margin-left: 10px; margin-right: 15px; float: left;}

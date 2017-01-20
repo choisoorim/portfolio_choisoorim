@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="utf-8" />
+        <title>Disney World</title>
+        <script src="js/jquery-1.12.4.min.js"></script>
+		<script src="js/jquery.scrollbar.min.js"></script>
+        <link href="css/style.css" rel="stylesheet" type="text/css" />
+        <link href="css/jquery.scrollbar.css" rel="stylesheet" />
+        <script>
+		$(document).ready(function(){
+			$('.scrollbox').scrollbar();
+			$('.txtbox').scrollbar();
+			$('.langbox').scrollbar();
+			
+			$('.btn-lang').hover(
+				function(){
+					$('.layerbox').stop().slideDown('fast');
+				},
+				function(){
+					$('.layerbox').stop().slideUp('fast');
+				}
+			);
+			
+		});
+		$(window).load(function(){
+			scrollboxresize(60);
+		});
+		$(window).resize(function(){
+			scrollboxresize(200);
+		});
+		function scrollboxresize(minus){
+			var windowy = $(window).height();
+			console.log('처음' + windowy);
+			windowy -= minus;
+			console.log('나중' + windowy);
+			$('.scrollbox').css('height',windowy);
+		}
+	</script>
+    </head>
+    <body>
+    	<div class="nav"><a href="#nav"><img src="img/11_0.png" width="80" height="80" alt="icon" /></a></div>
+    	<img class="back" src="img/background.png" width="1920" height="6406" alt="back" />
+    	<div class="tri-set">
+	    	<div class="tri"><span id="triangle-bottomright"></span></div>
+			<div class="tri2"><span id="triangle-down"></span></div>
+			<div class="tri3"><span id="triangle-right"></span></div>
+			<div class="tri3"><span id="triangle-right2"></span></div>
+			<div class="tri2"><span id="triangle-up"></span></div>
+			<div class="tri2"><span id="triangle-down2"></span></div>
+			<div class="tri2"><span id="triangle-bottomleft"></span></div>
+		</div>
+    	<header>
+		<div class="wrap" id="nav">
+			<h1><a href="#nav"><img src="img/logo.png" width="135" height="105" alt="LOGO" /></a></h1>
+			<nav>
+				<ul>
+					<li><a href="#character">CHARACTER</a></li>
+					<li><a href="#movie">MOVIE</a></li>
+					<li><a href="#pop">POPULARITY</a></li>
+					<li><a href="#disney">DISNEYLAND</a></li>
+					<li><a href="#contact">CONTACT</a></li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+	<section class="section1" id="home">
+		<article class="art1">
+			<div class= "content1">
+				<h2>WELCOME TO <br />
+					DISNEY WORLD!</h2>
+			</div>
+			<div class="gnb">
+				<ul class="gnb-l">
+					<li class="btn-lang">
+						<a href="#">
+							Category
+							<img src="img/arrow.png" width="17" height="11" alt="arrow" />
+						</a>
+						<div class="layerbox">
+							<div class="langbox scrollbar-macosx">
+								<ul>
+									<li><a href="#">Princess</a></li>
+									<li><a href="#">Prince</a></li>
+									<li><a href="#">Cartoon</a></li>
+									<li><a href="#">Movie</a></li>
+								</ul>
+							</div>
+						</div>
+					</li>
+					<li class="srch-var"><input type="text" id="serch" /></li>
+					<li class="btn-srch"><a href="#"><img src="img/icon1.png" width="30" height="30" alt="icon" /></a></li>
+				</ul>
+			</div>
+		</article>
+		<article class="art2">
+			<div class="content2">
+				<h2>You can see Disney's all things.<br />
+                Please enjoy here and play anything.</h2>
+                <p>You will know what in Disney World!</p>
+                <a href="#">GO PLAY</a>
+			</div>
+		</article>
+	</section>
+	<section class="section2" id="character">
+		<article>
+			<div>
+				<h2>DISNEY CAHRACTER</h2>
+				<p>view Disney characteres</p>
+			</div>
+			<div class="gallery">
+				<ul>
+					<li>
+						<div class="hover effect">
+							<span class="img1">BOLT</span>
+						</div>
+					</li>
+					<li>
+						<div class="hover effect">
+							<span class="img2">NIC</span>
+						</div>
+					</li>
+					<li>
+						<div class="hover effect">
+							<span class="img3">TANGEL LA</span>
+						</div>
+					</li>
+					<li>
+						<div class="hover effect">
+							<span class="img4">ARIEL</span>
+						</div>
+					</li>
+					<li>
+						<div class="hover effect">
+							<span class="img5">ELSA</span>
+						</div>
+					</li>
+					<li>
+						<div class="hover effect">
+							<span class="img6">SNOW WHITE</span>
+						</div>
+					</li>
+					<li>
+						<div class="hover effect">
+							<span class="img7">HAPPYNESS</span>
+						</div>
+					</li>
+					<li>
+						<div class="hover effect">
+							<span class="img8">UP</span>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</article>
+	</section>
+	<section class="section3" id="movie">
+		<article>
+			<div>
+				<h2>DISNEY MOVIES</h2>
+				<p>You can see Disney movies</p>
+			</div>
+			<div class="movie">
+				<ul>
+					<li>
+						<div class="hover effect">
+							<a class="mimg1" href="https://www.youtube.com/watch?v=F2bk_9T482g">UP</a>
+						</div>
+					</li>
+					<li>
+						<div class="hover effect">
+							<a class="mimg2" href="https://www.youtube.com/watch?v=QJloYAYBHrQ">ZOOTOPIA</a>
+						</div>
+					</li>
+					<li>
+						<div class="hover effect">
+							<a class="mimg3" href="https://www.youtube.com/watch?v=oauGmJ52XmM">INSIDE OUT</a>
+						</div>
+					</li>
+					<li>
+						<div class="hover effect">
+							<a class="mimg4" href="https://www.youtube.com/watch?v=YVVTZgwYwVo&index=6&list=RDSXKlJuO07eM">FROZEN</a>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</article>
+	</section>
+	<section class="section4" id="pop">
+		<article>
+			<div>
+				<h2>MOST POPULARITY IN DISNEY</h2>
+				<p>You can see what most popularity in Disney's movies</p>
+			</div>
+			<div class="vGraph">
+				<ul>
+					<li><span class="gTerm">SNOW WHITE</span><span class="gBar" style="height:20%"><span>20%</span></span></li>
+					<li><span class="gTerm">JASMIN</span><span class="gBar" style="height:10%"><span>10%</span></span></li>
+					<li><span class="gTerm">SLEEP BEAUTY</span><span class="gBar" style="height:70%"><span>70%</span></span></li>
+					<li><span class="gTerm">ARIEL</span><span class="gBar" style="height:100%"><span>100%</span></span></li>
+					<li><span class="gTerm">ELSA</span><span class="gBar" style="height:50%"><span>50%</span></span></li>
+					<li><span class="gTerm">TNAGEL LA</span><span class="gBar" style="height:15%"><span>15%</span></span></li>
+					<li><span class="gTerm">ORORA</span><span class="gBar" style="height:5%"><span>5%</span></span></li>
+				</ul>
+			</div>
+		</article>
+	</section>
+	<section class="section5" id="disney">
+		<article>
+			<div>
+				<h2>DISNEY LAND</h2>
+				<p>You can see where is Disney land</p>
+			</div>
+			<div class="land">
+				<ul>
+					<li>
+						<div class="hover effect">
+							<span>
+								<h3>American<br />
+								California</h3>
+								<p>Disneyland Resort</p>
+							</span>
+						</div>
+					</li>
+					<li>
+						<div class="hover effect">
+							<span>
+								<h3>American<br />
+								Florida</h3>
+								<p>Walt Disney World Resort</p>
+							</span>
+						</div>
+					</li>
+					<li>
+						<div class="hover effect">
+							<span>
+								<h3>Japan<br />
+								Chiba</h3>
+								<p>Tokyo Disney Resort</p>
+							</span>
+						</div>
+					</li>
+					<li>
+						<div class="hover effect">
+							<span>
+								<h3>France<br />
+								Maron la valle</h3>
+								<p>Disneyland Paris</p>
+							</span>
+						</div>
+					</li>
+					<li>
+						<div class="hover effect">
+							<span>
+								<h3>Hong kong<br />
+								Lantau</h3>
+								<p>Hong Kong Disneyland Resort</p>
+							</span>
+						</div>
+					</li>
+					<li>
+						<div class="hover effect">
+							<span>
+								<h3>China<br />
+								Sanghai</h3>
+								<p>Shanghai Disney Resort</p>
+							</span>
+						</div>
+					</li>
+					<li>
+						<div class="hover effect">
+							<span>
+								<h3>American<br />
+								California</h3>
+								<p>Disneyland Resort</p>
+							</span>
+						</div>
+					</li>
+					<li>
+						<div class="hover effect">
+							<span>
+								<h3>American<br />
+								Florida</h3>
+								<p>Walt Disney World Resort</p>
+							</span>
+						</div>
+					</li>
+					<li>
+						<div class="hover effect">
+							<span>
+								<h3>Japan<br />
+								Chiba</h3>
+								<p>Tokyo Disney Resort</p>
+							</span>
+						</div>
+					</li>
+					<li>
+						<div class="hover effect">
+							<span>
+								<h3>France<br />
+								Maron la valle</h3>
+								<p>Disneyland Paris</p>
+							</span>
+						</div>
+					</li>
+					<li>
+						<div class="hover effect">
+							<span>
+								<h3>Hong kong<br />
+								Lantau</h3>
+								<p>Hong Kong Disneyland Resort</p>
+							</span>
+						</div>
+					</li>
+					<li>
+						<div class="hover effect">
+							<span>
+								<h3>China<br />
+								Sanghai</h3>
+								<p>Shanghai Disney Resort</p>
+							</span>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</article>
+	</section>
+	<section class="section6" id="contact">
+		<article>
+			<div>
+				<h2>MOST POPULARITY IN DISNEY</h2>
+				<p>You can see what most popularity in Disney's movies</p>
+			</div>
+		<div id="container4">
+			<form action="form.php" method="get">
+				<fieldset>
+				<p>문의종류
+				<br />
+				<select name="userqna" id="userQna">
+					<option value="flower">예매</option>
+					<option value="flower_frame" selected="selected">문의</option>
+					<option value="flower_candle">의뢰</option>
+					<option value="ETC">기타</option>
+				</select>
+				<input type="radio" name="qna" id="buyer" value="buy_1" checked="checked" />
+				<label for="buyer">직접방문</label>
+				<input type="radio" name="qna" id="maker" value="make_1" />
+				<label for="maker">온라인 서비스</label>
+				
+		        </p>
+
+				<p>주소 
+					<select name="userAddr" id="userAddr">
+					<optgroup label="서울특별시">
+						<option value="강남구">강남구</option>
+						<option value="마포구">마포구</option>
+					</optgroup>
+					<optgroup label="경기도">
+						<option value="의왕시" selected="selected">의왕시</option>
+						<option value="과천시">과천시</option>
+					</optgroup>
+				</select>
+
+					<input type="text" id="userphoto" />
+
+				</p>
+
+				<p>
+				<label for="userEmail">이메일</label>
+				<input type="text" id="userEmail" title="이메일 아이디 입력" />
+				&#64;
+				<select name="userEmail" id="userEmail_1">
+					<option value="naver.com">naver.com</option>
+					<option value="daum.com">daum.com</option>
+					<option value="gmail.com" selected="selected">gmail.com</option>
+				</select>
+			    </p>
+
+			    <p>
+			    <label for="userPhone">핸드폰</label>
+			    <select name="userPhone" id="userPhone">
+			    	<option value="010" selected="selected">010</option>
+			    	<option value="011">011</option>
+			    	<option value="010">019</option>
+			    </select>
+
+			    -
+			    <input type="text" id="userPhone_1" title="핸드폰 번호 입력" />
+			    -
+			    <input type="text" id="userPhone_2" title="핸드폰 번호 입력" />
+			    </p>
+
+
+			    <p>수신설정
+			    <input type="checkbox" name="accept" id="acceptEmail" />
+			    <label for="acceptEmail">메일 수신 허용</label>
+			    <input type="checkbox" name="accept" id="acceptSMS" />
+			    <label for="acceptSMS">SMS 수신 허용</label>
+			    </p>
+
+				<p>
+				<label for="attchPhoto">사진</label>
+				<input type="file" name="attchPhoto" id="attchPhoto" />
+				</p>
+
+				<p>
+					<label for="memo">문의 내용</label>
+					<textarea cols="50" rows="10" id="memo" name="memo">
+					문의 하실 내용을 적어주세요.
+					</textarea>
+
+			    </p>
+
+			    <p>
+			    	<button type="submit" id="ok" value="전송">전송</button>
+			    	<button type="reset" id="reset" value="취소">취소</button>
+			    </p>
+
+				</fieldset>
+			</form>
+		</div>
+	</article>
+	</section>
+	<footer>
+        <p>Copyrightⓒ2016 Choi Soorim All rights reserved. Contact 010-4663-1448 / tnfla1448@naver.com</p>
+        <div id="divfooter">
+				<ul>
+					<li><a href="#"><img src="img/footertwitter.png" width="21" height="18" alt="footerT" / ></a></li>
+					<li><a href="#"><img src="img/footerfacebook.png" width="21" height="18" alt="footerF" / ></a></li>
+					<li><a href="#"><img src="img/footerskyp.png" width="21" height="18" alt="footerS" / ></a></li>
+					<li><a href="#"><img src="img/footerbehance.png" width="21" height="18" alt="footerB" / ></a></li>
+					<li><a href="#"><img src="img/footerin.png" width="21" height="18" alt="footerI" / ></a></li>
+				</ul>
+			</div>
+    </footer>
+    </body>
+ </html>

@@ -1,0 +1,51 @@
+/*메인페이지 css*/
+body {
+ 
+}
+.scene {
+  position:absolute;
+  bottom:0;
+  left:30%;
+  right:0;
+  top: 200%;
+  height: 100%;
+  width: 100%;
+}
+.scene > div {
+  position:absolute;
+  bottom:0;
+}
+
+.scene > div.clouds {
+  width:1100px;
+  left:50%;
+  margin-left:-550px;
+  height:540px;
+  bottom:400px;
+  background:url(../img/clouds.png) no-repeat center;
+}
+.scene div.trees {
+  width:1300px;
+  height:350px;
+  background:url(../img/trees.png) no-repeat center;
+  z-index:100;
+  left:50%;
+  bottom:0px;
+  margin-left:-650px;
+}
+.scene div.grass {
+  width:1200px;
+  height:100px;
+  z-index:200;
+  left:50%;
+  bottom: 5px;
+  margin-left:-600px;
+  background:url(../img/grass.png) no-repeat center;
+}
+.buildings {  
+  width:1100px;
+  height:650px;  
+  left:50%;
+  margin-left:-550px;
+  background:url(../img/buildings.png) no-repeat center;
+ }

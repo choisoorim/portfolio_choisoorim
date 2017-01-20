@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+		<meta charset="utf-8">
+		<title>Dry Flower-Inquiry</title>
+		<link rel="stylesheet" type="text/css" href="dryflower.css">
+</head>
+<body>
+	<div id="wrap">
+	<!--header-->
+		<div id="header">
+			<div id="gnb">
+				<h1 class="logo">
+					<a href="dryflower.html" target="_self">
+			          Dry Flower
+					</a>
+				</h1>
+				<ul class="menu">
+					<li class="sub">
+						<a href="dryflower_make.html" target="_self">만드는 법</a>
+					</li>
+					<li class="sub">
+						<a href="dryflower_gallery.html" target="_self">갤러리</a>
+					</li>
+					<li class="sub">
+						<a href="dryflower_Inquiry.html" target="_self">문의</a>
+					</li>
+				</ul>
+				<div class="music">
+					<audio controls autoplay muted loop src="music.mp4"></audio>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="container4">
+		<form action="form.php" method="get">
+		<fieldset>
+
+		<legend>로그인</legend>
+
+		<p>아이디: <input type="text" id="userId" /></p>
+		<p>비밀번호: <input type="password" id="userPwd" /></p>
+		</fieldset>
+		<br />
+		<fieldset>
+
+		<legend>문의하기</legend>
+
+		<p>문의종류
+		<br />
+		<select name="userqna" id="userQna">
+			<option value="flower">꽃</option>
+			<option value="flower_frame" selected="selected">액자</option>
+			<option value="flower_candle">향초</option>
+			<option value="ETC">기타</option>
+		</select>
+		<input type="radio" name="qna" id="buyer" value="buy_1" checked="checked" />
+		<label for="buyer">구매처</label>
+		<input type="radio" name="qna" id="maker" value="make_1" />
+		<label for="maker">만드는 법</label>
+		
+        </p>
+
+		<p>주소 
+			<select name="userAddr" id="userAddr">
+			<optgroup label="서울특별시">
+				<option value="강남구">강남구</option>
+				<option value="마포구">마포구</option>
+			</optgroup>
+			<optgroup label="경기도">
+				<option value="의왕시" selected="selected">의왕시</option>
+				<option value="과천시">과천시</option>
+			</optgroup>
+		</select>
+
+			<input type="text" id="userphoto" />
+
+		</p>
+
+		<p>
+		<label for="userEmail">이메일</label>
+		<input type="text" id="userEmail" title="이메일 아이디 입력" />
+		&#64;
+		<select name="userEmail" id="userEmail_1">
+			<option value="naver.com">naver.com</option>
+			<option value="daum.com">daum.com</option>
+			<option value="gmail.com" selected="selected">gmail.com</option>
+		</select>
+	    </p>
+
+	    <p>
+	    <label for="userPhone">핸드폰</label>
+	    <select name="userPhone" id="userPhone">
+	    	<option value="010" selected="selected">010</option>
+	    	<option value="011">011</option>
+	    	<option value="010">019</option>
+	    </select>
+
+	    -
+	    <input type="text" id="userPhone_1" title="핸드폰 번호 입력" />
+	    -
+	    <input type="text" id="userPhone_2" title="핸드폰 번호 입력" />
+	    </p>
+
+
+	    <p>수신설정
+	    <input type="checkbox" name="accept" id="acceptEmail" />
+	    <label for="acceptEmail">메일 수신 허용</label>
+	    <input type="checkbox" name="accept" id="acceptSMS" />
+	    <label for="acceptSMS">SMS 수신 허용</label>
+	    </p>
+
+		<p>
+		<label for="attchPhoto">사진</label>
+		<input type="file" name="attchPhoto" id="attchPhoto" />
+		</p>
+
+		<p>
+			<label for="memo">문의 내용</label>
+			<textarea cols="50" rows="10" id="memo" name="memo">
+			문의 하실 내용을 적어주세요.
+			</textarea>
+
+	    </p>
+
+	    <p>
+	    	<button type="submit" id="ok" value="전송">전송</button>
+	    	<button type="reset" id="reset" value="취소">취소</button>
+	    </p>
+
+		</fieldset>
+	</form>
+	</div>
+	<div id="footer">
+		<div class="inner">
+			<h1>
+				<a href="dryflower.html" target="_self">
+		          Dry Flower
+		        </a>
+	        </h1>
+	      <ul class="f_menu">
+	      	<li><a href="dryflower_make.html">만드는 법</a></li>
+	      	<li><a href="dryflower_gallery.html">갤러리</a></li>
+	      	<li><a href="dryflower_Inquiry.html">문의</a></li>
+	      </ul>
+	      <p class="copy_text">Copyrightⓒ2016 Choi Soorim All rights reserved. Contact 010-4663-1448 / <a>tnfla1448@naver.com</a></p>
+		</div>
+	</div>
+</body>

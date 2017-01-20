@@ -1,0 +1,88 @@
+/*메인 애니메이션*/
+html, body, .page {
+  transition: all .6s cubic-bezier(.5, .2, .2, 1.1);
+  -webkit-transition: all .6s cubic-bezier(.5, .2+
+
+
+
+  	3, .2, 1.1);
+  -moz-transition: all .6s cubic-bezier(.5, .2, .2, 1.1);
+  -o-transition: all .6s cubic-bezier(.5, .2, .2, 1.1);  
+}
+/*메인 애니메이션 끝*/
+
+/*네비게이션 애니메이션*/
+.fa {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  transform: translate(0, 0);
+}
+
+#menu .navi {
+  transition: all .5s ease-out !important;
+  -webkit-transition: all .5s ease-out;
+  -moz-transition: all .5s ease-out;
+  -o-transition: all .5s ease-out;
+}
+  /*타겟*/
+ #title2:target #about,
+ #title3:target #portfolio,
+ #title4:target #contact {
+  transform: translateX(-190%);
+  -webkit-transform: translateX(-190%);
+  -moz-transform: translateX(-190%);
+  -o-transform: translateX(-190%);
+  transition-delay: .4s !important;
+}
+
+#title2:target #main .navi,
+#title3:target #main .navi,
+#title4:target #main .navi {
+  -webkit-filter: blur(3px);
+} 
+
+#title2:target ul .navi,
+#title3:target ul .navi,
+#title4:target ul .navi {
+  transform: scale(.6);
+  -webkit-transform: scale(.6);
+  -moz-transform: scale(.6);
+  -o-transform: scale(.6);
+  transition-delay: .25s;
+}
+
+#title2:target #dos,
+#title3:target #tres,
+#title4:target #cuatro {
+  transform: scale(1.2) !important;
+  -webkit-transform: scale(1.2) !important;
+  -moz-transform: scale(1.2) !important;
+  -o-transform: scale(1.2) !important;
+}
+/*네비게이션 애니메이션 끝*/
+
+/*페이지 애니메이션*/
+.page .navi {
+  transform: translateX(360%);
+  -webkit-transform: translateX(360%);
+  -moz-transform: translateX(360%);
+  -o-transform: translateX(360%);
+  transition: all .5s cubic-bezier(.25, 1, .5, 1.25);
+  -webkit-transition: all .5s cubic-bezier(.25, 1, .5, 1.25);
+  -moz-transition: all .5s cubic-bezier(.25, 1, .5, 1.25);
+  -o-transition: all .5s cubic-bezier(.25, 1, .5, 1.25);
+}
+ /*메인페이지*/
+.page#main .navi {
+  transform: translateX(10%) !important;
+}
+
+#title2:target .page#about .navi,
+#title3:target .page#portfolio .navi,
+#title4:target .page#contact .navi {
+  transform: translateX(0) !important;
+  -webkit-transform: translateX(0) !important;
+  -moz-transform: translateX(0) !important;
+  -o-transform: translateX(0) !important;
+  transition-delay: 1s;
+/*페이지 애니메이션*/
